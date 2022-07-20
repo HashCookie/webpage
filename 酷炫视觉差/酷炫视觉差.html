@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="酷炫视觉差.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li>
+                <a href="#" class="active">Home</a>
+                
+            </li>
+            <li><a href="#">About</a>
+               </li>
+               <li> <a href="#">Work</a>
+                </li>
+                <li><a href="#">CXontact</a></li>
+        </ul>
+    </header>
+    <section >
+        <img src="stars.png" id="stars"> 
+        <img src="moon.png"id="moon"> 
+        <img src="mountains_behind.png" id="mountains_behind"> 
+        <h2 id="text"> Moon Light</h2>
+        <a href="#" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>loremFuesdr anbea STaOU UT SeTasatou werJade EUTUTN
+            cumque molestiae fugit ratione aliquam suscipit, perspiciatis in quod molestias quisquam doloribus at
+            delectus consequuntur quibusdam eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            maiores laudantium, corporis quam quisquam vero repellat ad nobis asperiores incidunt veritatis neque eur
+            Aliquam, nemo doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quidem dolore atque
+            «p»Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero iste laboriosam justo sapiente voluptatun
+            Fuesdr anbea STaOU UT SeTasatou werJade EUTUTN<br><br>
+            cumque molestiae fugit ratione aliquam suscipit, perspiciatis in quod molestias quisquam doloribus at
+            delectus consequuntur quibusdam eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            maiores laudantium, corporis quam quisquam vero repellat ad nobis asperiores incidunt veritatis neque eur
+            Aliquam, nemo doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quidem dolore atque
+            «p»Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero iste laboriosam justo sapiente voluptatun<br><br>
+            oremFuesdr anbea STaOU UT SeTasatou werJade EUTUTN
+            cumque molestiae fugit ratione aliquam suscipit, perspiciatis in quod molestias quisquam doloribus at
+            delectus consequuntur quibusdam eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            maiores laudantium, corporis quam quisquam vero repellat ad nobis asperiores incidunt veritatis neque eur
+            Aliquam, nemo doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id quidem dolore atque
+            «p»Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero iste laboriosam justo sapiente voluptatun
+            Fuesdr anbea STaOU UT SeTasatou werJade EUTUTN</p>
+        </div>
+        <script>
+            let stars=document.getElementById('stars');
+            let moom=document.getElementById('moon');
+            let mountains_behind=document.getElementById('mountains_behind');
+            let mountains_front=document.getElementById('mountains_front');
+            let text=document.getElementById('text');
+            let btn=document.getElementById('btn');
+            let header =document.querySelector('header');
+            window.addEventListener('scroll',function(){
+                let value =window.scrollY;
+                stars.style.left=value *0.25 + 'px';
+                moom.style.top=value *1.05 + 'px';
+                mountains_behind.style.top=value *0.5 + 'px';
+                mountains_front.style.top=value * 0 + 'px';
+                text.style.marginRight= value * 4+'px';
+                text.style.marginTop= value * 1.5+'px';
+                btn.style.marginRight= value * 4+'px';
+                header.style.top=value *0.5 + 'px';
+
+            })
+        </script>
+</body>
+</html>
