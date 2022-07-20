@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg.jpg) no-repeat center;
+}
+
+.wrap {
+    width: 480px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
+}
+
+.nav {
+    width: 480px;
+    height: 80px;
+    list-style: none;
+    display: flex;
+    background-color: #f04086;
+    border-radius: 20px;
+    filter: url("#goo");
+}
+
+.iconfont {
+    font-size: 42px;
+}
+
+.nav a {
+    width: 120px;
+    height: 100%;
+    display: inline-grid;
+    place-items: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    display: none;
+}
+
+.btn {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #f04086;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    z-index: 1;
+    transition: left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.a-active {
+    transform: translateY(-25%);
+    transition: left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.a-active .title {
+    display: block;
+    font-size: 16px;
+}
+
+/*关注+三连→领源码加老袭微信：zongjianriji*/
+/*关注+三连→领源码加老袭微信：zongjianriji*/
+/*关注+三连→领源码加老袭微信：zongjianriji*/
+/*关注+三连→领源码加老袭微信：zongjianriji*/
+/*关注+三连→领源码加老袭微信：zongjianriji*/
+/*关注+三连→领源码加老袭微信：zongjianriji*/
+/*关注+三连→领源码加老袭微信：zongjianriji*/
+/*关注+三连→领源码加老袭微信：zongjianriji*/
+/*关注+三连→领源码加老袭微信：zongjianriji*/
+/*关注+三连→领源码加老袭微信：zongjianriji*/
+/*关注+三连→领源码加老袭微信：zongjianriji*/

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="css/css.css" />
+    <script src="js/jquery.min.js"></script>
+    <title>流体菜单 就是牛逼 鉴定完毕</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="nav">
+            <span class="btn"></span>
+            <li>
+                <a href="#" class="a-active">
+                    <span class="iconfont icon-yun_o"></span>
+                    <span class="title">Cloud</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="iconfont icon-mogu"></span>
+                    <span class="title"> Mogo </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="iconfont icon-jingwuicon_svg-"></span>
+                    <span class="title">Tree</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="iconfont icon-Yoga"></span>
+                    <span class="title">Yoga</span>
+                </a>
+            </li>
+        </ul>
+        <!--        插入svg滤镜-->
+        <!-- 具体说明可以参照  https://css-tricks.com/gooey-effect/ -->
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="filter-svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <script>
+        $(function() {
+            // $('.点击的对象')是选中点击的对象
+            $(".nav a").click(function() {
+                var position = $(this).position();
+                $(".btn").css({
+                    left: +position.left + 20
+                });
+                $(".nav a").removeClass("a-active");
+                $(this).addClass("a-active");
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
+<!--关注+三连→领源码加老袭微信：zongjianriji-->
+<!--关注+三连→领源码加老袭微信：zongjianriji-->
+<!--关注+三连→领源码加老袭微信：zongjianriji-->
+<!--关注+三连→领源码加老袭微信：zongjianriji-->
+<!--关注+三连→领源码加老袭微信：zongjianriji-->
+<!--关注+三连→领源码加老袭微信：zongjianriji-->
+<!--关注+三连→领源码加老袭微信：zongjianriji-->
+<!--关注+三连→领源码加老袭微信：zongjianriji-->
+<!--关注+三连→领源码加老袭微信：zongjianriji-->
+<!--关注+三连→领源码加老袭微信：zongjianriji-->
+<!--关注+三连→领源码加老袭微信：zongjianriji-->

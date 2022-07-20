@@ -1,0 +1,44 @@
+{
+  "id": "2902616",
+  "name": "流体菜单",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16327802",
+      "name": "瑜伽",
+      "font_class": "yuqie",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "2480502",
+      "name": "瑜伽",
+      "font_class": "Yoga",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "5199853",
+      "name": "蘑菇",
+      "font_class": "mogu",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "5388008",
+      "name": "云_o",
+      "font_class": "yun_o",
+      "unicode": "ebb3",
+      "unicode_decimal": 60339
+    },
+    {
+      "icon_id": "10640860",
+      "name": "树",
+      "font_class": "jingwuicon_svg-",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    }
+  ]
+}
